@@ -1,0 +1,3 @@
+{% for num, content in contents %}
+<p><b>{{ "Model" if num == 0 else "Participant {}".format(num) }}:</b> {{ content }} </p>
+{% endfor %}

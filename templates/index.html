@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Socratic Models</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        function readTextbox() {
+            socket.emit('continue_seminar', {'id': document.getElementById("ID").innerHTML, 'prompt': document.getElementById('myTextbox').value})
+            document.getElementById('myTextbox').value = '';
+        }
+    </script>
+    <script type="text/javascript" charset="utf-8">
+        var socket = io();
+        socket.on('connect', function() {
+            socket.emit('new_seminar', {'prompt':'Debate whether golf is a sport.'});
+        });
+    
+        socket.on('update_seminar', (data) => {
+            document.getElementById("SEMINAR").innerHTML = data.content;
+        });
+    
+        socket.on('on_connect', (data) => {
+            document.getElementById("ID").innerHTML = data.id;
+        });
+    </script>
+    <p><b>UUID: </b><i id="ID"></i></p>
+    <p id="SEMINAR"></p>
+    <div>
+        <input type="text" id="myTextbox" placeholder="Enter an intermediary statement here">
+        <button onclick="readTextbox();">Advance</button>
+    </div>
+</body>

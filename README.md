@@ -13,13 +13,31 @@ source .venv/bin/activate               # Or .venv/Scripts/activate for windows
 pip install -r requirements.txt
 ```
 
-## Usage
+## CLI
 
-Call the function with the numbers of requested turns (each model uses a turn so 2 turns for both models to speak once).
+Call 'main.py' with the numbers of requested turns (each model uses a turn so 2 turns for both models to speak once).
 
 ```bash
 py main.py 4
 ```
+
+## Web Server (WIP)
+
+![alt text](image.png)
+
+Call the following command in the repositories root directory. The web server is currently extremely barebones and will be developed into a full application for possibly human testing.
+
+```bash
+flask run
+```
+
+### Current Features
+
+- A new sessions opens with every new tab or refresh
+- Clicking the advance button will cause the web server to generate the next response
+- You can add an intermediary statement by writing it in the textbox and hitting enter
+- The full dialogue will be output in raw HTML
+
 
 ## Improvements
 
