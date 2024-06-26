@@ -27,7 +27,27 @@ def handle_new_seminar(data):
     flask_socketio.emit('on_connect', {'id': new_id})
 
 @socketio.on('continue_seminar')
-def handle_message(data):
+def handle_continue_seminar(data):
+    """
+    Handle a request to advance the state of a seminar
+    """
+    try:
+        model = seminar_dict[data['id']]
+    except KeyError:
+        return "Record not found", 400
+
+    if data['prompt'] == '':
+        model.next()
+    else:
+        model.add_statement(data['prompt'])
+
+    flask_socketio.emit('update_seminar', {'content': flask.render_template('dialogue.html', contents=model.contents)})
+    
+@socketio.on('delete_seminar')
+def handle_continue_seminar(data):
+    """
+    Handle a request to advance the state of a seminar
+    """
     try:
         model = seminar_dict[data['id']]
     except KeyError:
@@ -39,7 +59,6 @@ def handle_message(data):
         model.add_statement(data['prompt'])
 
     flask_socketio.emit('update_seminar', {'content': flask.render_template('dialogue.html', contents=model.contents)})
-
 
 if __name__ == "__main__":
     socketio.run(app)

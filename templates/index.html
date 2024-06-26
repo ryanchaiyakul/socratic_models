@@ -3,12 +3,13 @@
     <meta charset="UTF-8">
     <title>Socratic Models</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/dialogue.css') }}">
 </head>
 <body>
     <script>
-        function readTextbox() {
-            socket.emit('continue_seminar', {'id': document.getElementById("ID").innerHTML, 'prompt': document.getElementById('myTextbox').value})
-            document.getElementById('myTextbox').value = '';
+        function advance_seminar() {
+            socket.emit('continue_seminar', {'id': document.getElementById("id").innerHTML, 'prompt': document.getElementById('statement').value})
+            document.getElementById('statement').value = 'Enter an intermediary statement here';
         }
     </script>
     <script type="text/javascript" charset="utf-8">
@@ -18,17 +19,18 @@
         });
     
         socket.on('update_seminar', (data) => {
-            document.getElementById("SEMINAR").innerHTML = data.content;
+            document.getElementById("seminar").innerHTML = data.content;
         });
     
         socket.on('on_connect', (data) => {
-            document.getElementById("ID").innerHTML = data.id;
+            document.getElementById("id").innerHTML = data.id;
         });
     </script>
-    <p><b>UUID: </b><i id="ID"></i></p>
-    <p id="SEMINAR"></p>
-    <div>
-        <input type="text" id="myTextbox" placeholder="Enter an intermediary statement here">
-        <button onclick="readTextbox();">Advance</button>
+    
+    <div><b>UUID: </b><i id="id"></i></div>
+    <div class="seminar" id="seminar"></div>
+    <div class="interface">
+        <input type="text" id="statement" class="statement" placeholder="Enter an intermediary statement here">
+        <button onclick="advance_seminar();" class="advance"> &rArr; </button>
     </div>
 </body>

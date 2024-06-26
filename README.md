@@ -23,7 +23,7 @@ py main.py 4
 
 ## Web Server (WIP)
 
-![alt text](image.png)
+![alt text](docs/imgs/web-server.png)
 
 Call the following command in the repositories root directory. The web server is currently extremely barebones and will be developed into a full application for possibly human testing.
 
