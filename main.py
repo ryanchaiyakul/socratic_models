@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     model_one = socratic_model.GeminiActor()
     model_two = socratic_model.GeminiActor()
-    my_seminar = socratic_model.Seminar(model_one, model_two)
+    my_seminar = socratic_model.Seminar("Debate whether golf is a sport", model_one, model_two)
     
     for i in range(int(sys.argv[1])):
         if i == 1:

@@ -3,15 +3,23 @@ import typing
 from . import actor
 
 
+_example_prompt = "{} \
+If a part starts with the characters \"[PROMPT]\", \
+this message comes from the user and not your opponent. \
+You may not use the characters \"[PROMPT]\" in your response. \
+If you recieve one of these messages after your most recent output, \
+please acknowledge and respond to it. After the next sentence, all \
+responses from the user will be from your opponent. Can you begin the debate?"
+
 class Seminar:
 
-    def __init__(self, *models: actor.Actor):
+    def __init__(self, prompt: str, *models: actor.Actor):
         self.__contents: typing.List[typing.Tuple[int, str]] = []
         self.__models = [model for model in models]
-        self.__init_contents()
+        self.__init_contents(prompt)
 
-    def __init_contents(self):
-        self.__contents.append((0, "You are debating against an opponent on whether golf is a sport. If a part starts with the characters \"[PROMPT]\", this message comes from the user and not your opponent. You may not use the characters \"[PROMPT]\" in your response. If you recieve one of these messages after your most recent output, please acknowledge and respond to it. After the next sentence, all responses from the user will be from your opponent. Can you begin the debate?"))
+    def __init_contents(self, prompt: str):
+        self.__contents.append((0, _example_prompt.format(prompt)))
     
     def add_statement(self, statement:str):
         self.__contents.append((0, "[PROMPT] {}".format(statement)))
