@@ -9,7 +9,7 @@
     <script>
         function advance_seminar() {
             socket.emit('continue_seminar', {'id': document.getElementById("id").innerHTML, 'prompt': document.getElementById('statement').value})
-            document.getElementById('statement').value = 'Enter an intermediary statement here';
+            document.getElementById('statement').value = '';
         }
     </script>
     <script type="text/javascript" charset="utf-8">
