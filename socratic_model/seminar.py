@@ -11,8 +11,11 @@ class Seminar:
         self.__init_contents()
 
     def __init_contents(self):
-        self.__contents.append((0, "You are debating against an opponent on whether golf is a sport. After the next sentence, all responses from the user will be from your opponent. Can you begin the debate?"))
+        self.__contents.append((0, "You are debating against an opponent on whether golf is a sport. If a part starts with the characters \"[PROMPT]\", this message comes from the user and not your opponent. You may not use the characters \"[PROMPT]\" in your response. If you recieve one of these messages after your most recent output, please acknowledge and respond to it. After the next sentence, all responses from the user will be from your opponent. Can you begin the debate?"))
     
+    def add_statement(self, statement:str):
+        self.__contents.append((0, "[PROMPT] {}".format(statement)))
+
     @property
     def contents(self):
         """ 

@@ -7,9 +7,6 @@ import google.generativeai.types.content_types as content_types
 class Actor(metaclass=abc.ABCMeta):
     """ Abstract class that hides specific gen ai implementation """
 
-    def __init__(self):
-        pass
-
     @abc.abstractmethod
     def generate_content(self, context: typing.List[typing.Tuple[int, str]], num: int)->str:
         """ Wrapper to generate content with passed dictionary as context """
