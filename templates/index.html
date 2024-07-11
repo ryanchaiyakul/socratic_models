@@ -6,31 +6,42 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/dialogue.css') }}">
 </head>
 <body>
-    <script>
-        function advance_seminar() {
-            socket.emit('continue_seminar', {'id': document.getElementById("id").innerHTML, 'prompt': document.getElementById('statement').value})
-            document.getElementById('statement').value = '';
-        }
-    </script>
-    <script type="text/javascript" charset="utf-8">
-        var socket = io();
-        socket.on('connect', function() {
-            socket.emit('new_seminar', {'prompt':'Debate whether golf is a sport.'});
-        });
-    
-        socket.on('update_seminar', (data) => {
-            document.getElementById("seminar").innerHTML = data.content;
-        });
-    
-        socket.on('on_connect', (data) => {
-            document.getElementById("id").innerHTML = data.id;
-        });
-    </script>
-    
-    <div><b>UUID: </b><i id="id"></i></div>
+    <div><b>UUID: </b><i id="id" contenteditable="true" onfocusout="check_id();"></i></div>
     <div class="seminar" id="seminar"></div>
     <div class="interface">
-        <input type="text" id="statement" class="statement" placeholder="Enter an intermediary statement here">
+        <input type="text" id="statement" class="statement" placeholder="Enter a statement here">
         <button onclick="advance_seminar();" class="advance"> &rArr; </button>
     </div>
 </body>
+<script type="text/javascript" charset="utf-8">
+    var socket = io();
+    var id = document.getElementById('id');
+
+    socket.on('update_seminar', (data) => {
+        document.getElementById("seminar").innerHTML = data.content;
+    });
+
+    function advance_seminar() {
+        console.log(id.textContent);
+        if (id.textContent == "") {
+            socket.emit('new_seminar', {'prompt': document.getElementById('statement').value});
+        } else {
+            socket.emit('continue_seminar', {'id': id.innerHTML, 'prompt': document.getElementById('statement').value})
+        }
+        document.getElementById('statement').value = '';
+    }
+
+    socket.on('on_connect', (data) => {
+        document.getElementById("id").textContent = data.id;
+    });
+    
+    function check_id() {
+        socket.emit('check_seminar', {'id': id.textContent})
+    }
+
+    socket.on('check_seminar', (data) => {
+        if (!data.value) {
+            alert("Your UUID is incorrect. Please enter a valid one or reload the page.")
+        }
+    })
+</script>
