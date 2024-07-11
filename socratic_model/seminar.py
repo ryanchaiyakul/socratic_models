@@ -1,5 +1,4 @@
 import typing
-import json
 import lzma
 
 from . import actor
