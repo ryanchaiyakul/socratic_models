@@ -4,6 +4,9 @@ import flask
 import flask_socketio
 import google.generativeai as genai
 
+import firebase_admin
+from firebase_admin import firestore, credentials
+
 import secret
 import socratic_model
 
@@ -11,7 +14,11 @@ genai.configure(api_key=secret.SECRET_KEY)
 app = flask.Flask(__name__)
 socketio = flask_socketio.SocketIO(app)
 
-seminar_dict: typing.Dict[socratic_model.Seminar, socratic_model.Seminar] = {}
+
+cred = credentials.Certificate("private_key.json")
+firebase = firebase_admin.initialize_app(cred)
+db = firestore.client()
+seminar_collection = db.collection('seminars')
 
 @app.route("/")
 def hello_world():
@@ -22,8 +29,12 @@ def handle_new_seminar(data):
     """
     Generate a new uuid and seminar for each session
     """
-    new_id = uuid.uuid4().hex
-    seminar_dict[new_id] = socratic_model.Seminar(data['prompt'], socratic_model.GeminiActor(), socratic_model.GeminiActor())
+    uids = [seminar.id for seminar in seminar_collection.stream()]
+    while (new_id := uuid.uuid4().hex) in uids:
+        pass
+    #seminar_dict[new_id] = socratic_model.Seminar(data['prompt'], socratic_model.GeminiActor(), socratic_model.GeminiActor())
+    model = socratic_model.Seminar(data['prompt'], socratic_model.GeminiActor(), socratic_model.GeminiActor())
+    seminar_collection.document(new_id).set(model.to_dict())
     flask_socketio.emit('on_connect', {'id': new_id})
 
 @socketio.on('continue_seminar')
@@ -31,34 +42,20 @@ def handle_continue_seminar(data):
     """
     Handle a request to advance the state of a seminar
     """
-    try:
-        model = seminar_dict[data['id']]
-    except KeyError:
+    seminar_dict = seminar_collection.document(data['id']).get()
+    if not seminar_dict.exists:
         return "Record not found", 400
+
+    model = socratic_model.Seminar.from_dict(seminar_dict.to_dict())
 
     if data['prompt'] == '':
         model.next()
     else:
         model.add_statement(data['prompt'])
 
-    flask_socketio.emit('update_seminar', {'content': flask.render_template('dialogue.html', contents=model.contents)})
-    
-@socketio.on('delete_seminar')
-def handle_continue_seminar(data):
-    """
-    Handle a request to advance the state of a seminar
-    """
-    try:
-        model = seminar_dict[data['id']]
-    except KeyError:
-        return "Record not found", 400
-    
-    if data['prompt'] == '':
-        model.next()
-    else:
-        model.add_statement(data['prompt'])
+    seminar_collection.document(data['id']).update(model.last_content_embedded())
 
     flask_socketio.emit('update_seminar', {'content': flask.render_template('dialogue.html', contents=model.contents)})
-
+    
 if __name__ == "__main__":
     socketio.run(app)
