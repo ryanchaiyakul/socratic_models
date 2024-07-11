@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seminars - Socratic Models</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/dialogue.css') }}">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>UUID</th>
+            <th>Sessions</th>
+        </tr>
+        {% for seminar in seminars %}
+        <tr>
+            <td> {{seminar.id}} </td>
+            <td> {{seminar.to_dict()['content']|count}} </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>

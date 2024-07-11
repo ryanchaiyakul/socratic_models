@@ -29,8 +29,12 @@ def get_seminar_contents(uid):
     return {'content': flask.render_template('dialogue.html', contents=model.contents)}
 
 @app.route("/")
-def hello_world():
+def index():
     return flask.render_template('index.html')
+
+@app.route("/seminars")
+def seminars():
+    return flask.render_template('seminars.html', seminars =seminar_collection.stream())
 
 @socketio.on('new_seminar')
 def handle_new_seminar(data):
