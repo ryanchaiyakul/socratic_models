@@ -33,7 +33,8 @@ flask run
 
 ### Current Features
 
-- A new sessions opens with every new tab or refresh
+- A new session can be created by entering a prompt on a new page
+- You can load previous sessions by entering the UUID at the top of the page
 - Clicking the advance button will cause the web server to generate the next response
 - You can add an intermediary statement by writing it in the textbox and hitting enter
 - The full dialogue will be output in raw HTML
@@ -41,6 +42,5 @@ flask run
 
 ## Improvements
 
-- Add a way to easily pass the initial prompt
-- Test whether a prompted control signal could be used to differentiate user and model responses as the model only diffentiates between itself and foreign text
 - Add OpenAI actor class
+- Add hyperlink from overview page to specific sessions for quality of life
