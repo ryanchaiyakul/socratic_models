@@ -26,7 +26,7 @@
         if (id.textContent == "") {
             socket.emit('new_seminar', {'prompt': document.getElementById('statement').value});
         } else {
-            socket.emit('continue_seminar', {'id': id.innerHTML, 'prompt': document.getElementById('statement').value})
+            socket.emit('continue_seminar', {'id': id.textContent, 'prompt': document.getElementById('statement').value})
         }
         document.getElementById('statement').value = '';
     }

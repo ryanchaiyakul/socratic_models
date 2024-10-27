@@ -21,6 +21,14 @@ DEFAULT_ENCODING = {actor.GeminiActor: "gemini"}
 
 
 class Seminar:
+    """
+    Handles all the internal API and buisness logic necessary to have a LLM discusion
+
+    Features:
+    - Loading and saving to a python dictionary object (with compression)
+    - Output as a .cha
+    - Simple calls to generate new content
+    """
 
     def __init__(self, prompt: str, *models: actor.Actor):
         self.__contents: typing.List[typing.Tuple[int, str]] = []
@@ -28,7 +36,28 @@ class Seminar:
         self.__init_contents(prompt)
         self.__index = 0
 
+    def __init_contents(self, prompt: str):
+        self.__contents.append((0, _example_prompt.format(prompt)))
+
+    @staticmethod
+    def from_dict(config: dict, model_encoding: dict = DEFAULT_ENCODING) -> "Seminar":
+        inv_encoding = {v: k for k, v in model_encoding.items()}
+        seminar = Seminar(
+            "NOT IMPORTANT", *[inv_encoding[encoding]() for encoding in config['models']])
+
+        contents = []
+        for encoded in config['content']:
+            index, content = lzma.decompress(
+                encoded).decode('utf-8').split('\n', 1)
+            contents.append((int(index), content))
+        seminar._Seminar__contents = contents
+        seminar._Seminar__index = int(config['index'])
+        return seminar
+
     def to_dict(self, model_encoding: dict = DEFAULT_ENCODING) -> dict:
+        """
+        Get self.__contents encoded with lzma
+        """
         content_encoded = []
         for k, v in self.__contents:
             content_encoded.append(lzma.compress(
@@ -38,34 +67,7 @@ class Seminar:
     def last_content_embedded(self) -> dict:
         return {"index": self.__index, "content": firestore.ArrayUnion([lzma.compress("{}\n{}".format(self.__contents[-1][0], self.__contents[-1][1]).encode('utf-8'))])}
 
-    @staticmethod
-    def from_dict(config: dict, model_encoding: dict = DEFAULT_ENCODING) -> "Seminar":
-        inv_encoding = {v: k for k, v in model_encoding.items()}
-        seminar = Seminar(
-            "NOT IMPORTANT", *[inv_encoding[encoding]() for encoding in config['models']])
-
-        content = []
-        for encoded in config['content']:
-            content.append(lzma.decompress(
-                encoded).decode('utf-8').split('\n', 1))
-        seminar._Seminar__contents = content
-        seminar._Seminar__index = config['index']
-        return seminar
-
-    def __init_contents(self, prompt: str):
-        self.__contents.append((0, _example_prompt.format(prompt)))
-
-    def add_statement(self, statement: str):
-        self.__contents.append((0, "[PROMPT] {}".format(statement)))
-
-    @property
-    def contents(self):
-        """ 
-        A list of tuples of the format (participant number, content)
-        """
-        return self.__contents
-
-    def __str__(self):
+    def __repr__(self):
         """
         Outputs the dialogue in a human readable format
         """
@@ -94,6 +96,16 @@ class Seminar:
 
         return ret + "@End"
 
+    def add_statement(self, statement: str):
+        self.__contents.append((0, "[PROMPT] {}".format(statement)))
+
+    @property
+    def contents(self):
+        """ 
+        A list of tuples of the format (participant number, content)
+        """
+        return self.__contents
+
     def talk(self, index: int):
         if index < 0 or index > len(self.__models):
             raise ValueError("Index: {} is out of range".format(index))
@@ -105,7 +117,7 @@ class Seminar:
 
     def next(self):
         """
-        Calls talk for the next NPC participant
+        Calls talk for the next LLM participant
         """
         self.talk(self.__index)
         self.__index = (self.__index + 1) % len(self.__models)

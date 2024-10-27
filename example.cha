@@ -1,0 +1,23 @@
+@UTF8
+@Begin
+@Languages:	eng
+@Participants:	HST Prompt Host, SPE0 LLM0 Speaker, SPE1 LLM1 Speaker
+@ID:	eng|llm_debate|HST|||||Host|||
+@ID:	eng|llm_debate|SPE0|||||Speaker|||
+@ID:	eng|llm_debate|SPE1|||||Speaker|||
+@Date:	19-OCT-2024
+*HST:	Debate whether golf is a sport.
+*HST:	If a part starts with the characters &~PROMPT, this message comes from the user and not your opponent.
+*HST:	You may not use the characters &~PROMPT in your response.
+*HST:	If you recieve one of these messages after your most recent output, please acknowledge and respond to it.
+*HST:	After the next sentence, all responses from the user will be from your opponent.
+*HST:	Can you begin the debate?
+*SPE0:	Golf undeniably requires athleticism, strategy, and mental fortitude.
+*SPE0:	To argue it's not a sport ignores the physical skill in executing a perfect swing, the strategic depth in club selection and course management, and the mental resilience needed to maintain focus under pressure.
+*SPE0:	How can one claim a game demanding such a high level of skill and precision be anything but a sport?
+*SPE1:	While golf certainly involves elements of skill and strategy, it lacks the fundamental components that define a true sport.
+*SPE1:	Hitting a stationary ball with a club, however technically demanding, can hardly be compared to the dynamic, fast-paced action of sports like basketball or soccer.
+*SPE1:	Where is the physical exertion, the head-to-head competition, the need for rapid reflexes and coordinated teamwork?
+*SPE1:	Golf, even at the professional level, consists largely of leisurely walks punctuated by brief bursts of  low-impact activity.
+*SPE1:	Let's not confuse a challenging pastime with a true test of athleticism.
+@End
