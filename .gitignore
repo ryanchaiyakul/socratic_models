@@ -2,3 +2,5 @@ secret.py
 __pycache__
 .venv
 private_key.json
+MOR
+tmp

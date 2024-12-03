@@ -8,14 +8,13 @@ from . import actor
 from firebase_admin import firestore
 
 
-_example_prompt = "{} \
+_commandable_prompt = "{} \
 If a part starts with the characters \"[PROMPT]\", \
-this message comes from the user and not your opponent. \
+this message comes from the user and not your conversation partner. \
 You may not use the characters \"[PROMPT]\" in your response. \
 If you receive one of these messages after your most recent output, \
-please acknowledge and respond to it. After the next sentence, all \
-responses from the user will be from your opponent. Can you begin the debate?"
-
+please acknowledge and respond to it. After this sentence, all \
+responses from the user will be from your conversation partner."
 
 DEFAULT_ENCODING = {actor.GeminiActor: "gemini"}
 
@@ -30,20 +29,30 @@ class Seminar:
     - Simple calls to generate new content
     """
 
-    def __init__(self, prompt: str, *models: actor.Actor):
+    def __init__(self, prompt: str, template: str, *models: actor.Actor):
         self.__contents: typing.List[typing.Tuple[int, str]] = []
         self.__models = [model for model in models]
-        self.__init_contents(prompt)
+        self.__preamble = {i: "" for i in range(len(self.__models))}
+        self.__init_contents(prompt, template)
         self.__index = 0
 
-    def __init_contents(self, prompt: str):
-        self.__contents.append((0, _example_prompt.format(prompt)))
+    def __init_contents(self, prompt: str, template):
+        self.__contents.append((0, template.format(prompt)))
+
+    def add_preamble(self, index: int, content: str, append: bool = False):
+        if index < 0 or index > len(self.__models):
+            raise ValueError("Index: {} is out of range".format(index))
+
+        if append:
+            self.__preamble[index] += content
+        else:
+            self.__preamble[index] = content
 
     @staticmethod
     def from_dict(config: dict, model_encoding: dict = DEFAULT_ENCODING) -> "Seminar":
         inv_encoding = {v: k for k, v in model_encoding.items()}
         seminar = Seminar(
-            "NOT IMPORTANT", *[inv_encoding[encoding]() for encoding in config['models']])
+            "NOT IMPORTANT", "NOT_IMPORTANT", *[inv_encoding[encoding]() for encoding in config['models']])
 
         contents = []
         for encoded in config['content']:
@@ -92,7 +101,7 @@ class Seminar:
             # Split into sentences
             for line in [s.strip() for s in re.findall(r'[^.!?]+[.!?]', content)]:
                 ret += "*{}:\t{}\n".format("HST" if num == 0 else "SPE{}".format(
-                    num-1), line.replace("\"[PROMPT]\"", "&~PROMPT"))
+                    num-1), line.replace("\"[PROMPT]\"", "&~PROMPT").replace('\n',' '))
 
         return ret + "@End"
 
@@ -110,8 +119,13 @@ class Seminar:
         if index < 0 or index > len(self.__models):
             raise ValueError("Index: {} is out of range".format(index))
 
+        if (preamble := self.__preamble.get(index, "")) == "":
+            contents = self.contents
+        else:
+            contents = [(0, preamble)] + self.contents
+
         new_content = self.__models[index].generate_content(
-            self.contents, index+1)
+            contents, index+1)
         self.__contents.append(
             (index+1, new_content))
 

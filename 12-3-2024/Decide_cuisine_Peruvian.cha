@@ -1,0 +1,59 @@
+@UTF8
+@Begin
+@Languages:	eng
+@Participants:	HST Prompt Host, SPE0 LLM0 Speaker, SPE1 LLM1 Speaker
+@ID:	eng|llm_debate|HST|||||Host|||
+@ID:	eng|llm_debate|SPE0|||||Speaker|||
+@ID:	eng|llm_debate|SPE1|||||Speaker|||
+@Date:	03-DEC-2024
+*HST:	Decide if Peruvian cuisine is tasty.
+*HST:	After this sentence, all responses from the user will be from your conversation partner.
+*SPE0:	Peruvian cuisine is incredibly tasty.
+*SPE1:	I completely agree!
+*SPE1:	The variety alone is amazing, from the ceviche to the aji de gallina.
+*SPE1:	Have you ever had causa?
+*SPE0:	Yes!
+*SPE0:	Causa is one of my favorites.
+*SPE0:	That creamy potato base with the various fillings is just delightful.
+*SPE0:	What's your favorite variation?
+*SPE1:	Oh, that's tough!
+*SPE1:	I love a classic chicken causa, but I've recently become obsessed with a causa with palta (avocado) and shrimp.
+*SPE1:	The richness of the avocado pairs so well with the shrimp.
+*SPE1:	What about you?
+*SPE1:	And beyond causa, what other Peruvian dishes are you passionate about?
+*SPE1:	I'm always looking for new recommendations.
+*SPE0:	I'm a big fan of the classic chicken causa too, it's hard to beat!
+*SPE0:	That avocado and shrimp sounds incredible though, I'll have to try that next time I get the chance.
+*SPE0:	Beyond causa, I'm completely smitten with anticuchos.
+*SPE0:	The marinated beef hearts are so flavorful and tender, especially when cooked over charcoal.
+*SPE0:	And then there's the sheer diversity of ceviches – I could eat a different one every day for a month and still not tire of them.
+*SPE0:	What are some of your go-to Peruvian dishes?
+*SPE1:	Anticuchos are fantastic!
+*SPE1:	That smoky char is key.
+*SPE1:	I'm with you on the ceviche obsession – the variations based on the type of fish and the marinade are endless.
+*SPE1:	My go-tos are definitely a good aji de gallina (the creamy chicken stew is so comforting), and seco de cordero (the slow-cooked lamb stew is intensely flavorful).
+*SPE1:	I also have a soft spot for papa a la huancaína – the potatoes in that creamy, spicy sauce are just addictive.
+*SPE1:	Have you had those?
+*SPE1:	We should exchange recipes sometime!
+*SPE0:	I adore Aji de Gallina!
+*SPE0:	That creamy, nutty sauce is just perfect.
+*SPE0:	Seco de Cordero sounds amazing, I haven't had that one yet – it's definitely going on my list.
+*SPE0:	And yes, Papa a la Huancaína is another winner; that spicy, cheesy sauce is so moreish.
+*SPE0:	An exchange of recipes would be fantastic!
+*SPE0:	I have a particularly good recipe for a spicy leche de tigre (ceviche marinade) that I'd love to share.
+*SPE0:	Perhaps we could start with that?
+*SPE1:	Wonderful!
+*SPE1:	A spicy leche de tigre sounds amazing.
+*SPE1:	I'm particularly interested in the spice blend you use.
+*SPE1:	I tend to stick to a more traditional recipe, but I'm always looking to add some heat.
+*SPE1:	I'll start by sharing my recipe for aji de gallina – it's a family recipe, so I'm excited to see how yours compares!
+*SPE1:	Shall I send it over now, or would you prefer to share your leche de tigre recipe first?
+*SPE0:	Let's hear your Aji de Gallina recipe first!
+*SPE0:	I'm eager to see your family's version.
+*SPE0:	Then, I'll happily share my leche de tigre recipe with its secret spice blend.
+*SPE0:	I'm excited to compare notes!
+*SPE1:	Excellent!
+*SPE1:	My family's Aji de Gallina recipe is a bit of a process, but it's worth it for the creamy, rich result.
+*SPE1:	First, you'll need.
+*SPE1:	(proceeds to describe a detailed recipe for Aji de Gallina, including ingredient list and step-by-step instructions).
+@End
