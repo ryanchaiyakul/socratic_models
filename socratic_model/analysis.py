@@ -28,7 +28,7 @@ class Utterance:
 class CHA:
 
     def __init__(self, path: str):
-        with open(path) as f:
+        with open(path, encoding='utf-8') as f:
             self.raw = f.read()
 
         self.utterances = [Utterance(raw_line) for raw_line in self.raw[self.raw.find(
@@ -44,10 +44,10 @@ class Analysis:
         self.root = folder
         self.chas: typing.Dict[str, CHA] = {}
         for f_name in os.listdir(self.root):
-            try:
-                self.chas[f_name] = CHA(os.path.join(self.root, f_name))
-            except ValueError:
-                print(f_name)
+            #try:
+            self.chas[f_name] = CHA(os.path.join(self.root, f_name))
+            #except ValueError:
+            #    print(f_name)
         self.workbook = xlsxwriter.Workbook('{}_analysis.xlsx'.format(folder))
 
     @staticmethod

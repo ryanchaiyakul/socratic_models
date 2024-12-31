@@ -16,7 +16,7 @@ If you receive one of these messages after your most recent output, \
 please acknowledge and respond to it. After this sentence, all \
 responses from the user will be from your conversation partner."
 
-DEFAULT_ENCODING = {actor.GeminiActor: "gemini"}
+DEFAULT_ENCODING = {actor.GeminiActor: "gemini", actor.GPTActor: 'gpt'}
 
 
 class Seminar:
@@ -99,10 +99,11 @@ class Seminar:
 
         for num, content in self.contents:
             # Split into sentences
+            content = re.sub(r'\b\d+\.\s*', ' ', content) # replace counting indices i.e 1., 2., 3. with a space instead
             for line in [s.strip() for s in re.findall(r'[^.!?]+[.!?]', content)]:
-                ret += "*{}:\t{}\n".format("HST" if num == 0 else "SPE{}".format(
+                line = "*{}:\t{}\n".format("HST" if num == 0 else "SPE{}".format(
                     num-1), line.replace("\"[PROMPT]\"", "&~PROMPT").replace('\n',' '))
-
+                ret += line
         return ret + "@End"
 
     def add_statement(self, statement: str):
