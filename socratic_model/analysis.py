@@ -62,7 +62,7 @@ class Analysis:
         self.entries = []
         with torch.no_grad():
             for f_name, cha in tqdm(self.chas.items(), desc="EVM"):
-                for i in range(len(cha.utterances)):
+                for i in tqdm(range(len(cha.utterances))):
                     for j in range(1, k+1):
                         if (i+j) < len(cha.utterances):
                             u_i = cha.utterances[i]

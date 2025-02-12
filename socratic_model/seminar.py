@@ -32,21 +32,11 @@ class Seminar:
     def __init__(self, prompt: str, template: str, *models: actor.Actor):
         self.__contents: typing.List[typing.Tuple[int, str]] = []
         self.__models = [model for model in models]
-        self.__preamble = {i: "" for i in range(len(self.__models))}
         self.__init_contents(prompt, template)
         self.__index = 0
 
     def __init_contents(self, prompt: str, template):
         self.__contents.append((0, template.format(prompt)))
-
-    def add_preamble(self, index: int, content: str, append: bool = False):
-        if index < 0 or index > len(self.__models):
-            raise ValueError("Index: {} is out of range".format(index))
-
-        if append:
-            self.__preamble[index] += content
-        else:
-            self.__preamble[index] = content
 
     @staticmethod
     def from_dict(config: dict, model_encoding: dict = DEFAULT_ENCODING) -> "Seminar":
@@ -99,10 +89,11 @@ class Seminar:
 
         for num, content in self.contents:
             # Split into sentences
-            content = re.sub(r'\b\d+\.\s*', ' ', content) # replace counting indices i.e 1., 2., 3. with a space instead
+            # replace counting indices i.e 1., 2., 3. with a space instead
+            content = re.sub(r'\b\d+\.\s*', ' ', content)
             for line in [s.strip() for s in re.findall(r'[^.!?]+[.!?]', content)]:
                 line = "*{}:\t{}\n".format("HST" if num == 0 else "SPE{}".format(
-                    num-1), line.replace("\"[PROMPT]\"", "&~PROMPT").replace('\n',' '))
+                    num-1), line.replace("\"[PROMPT]\"", "&~PROMPT").replace('\n', ' '))
                 ret += line
         return ret + "@End"
 
@@ -120,13 +111,8 @@ class Seminar:
         if index < 0 or index > len(self.__models):
             raise ValueError("Index: {} is out of range".format(index))
 
-        if (preamble := self.__preamble.get(index, "")) == "":
-            contents = self.contents
-        else:
-            contents = [(0, preamble)] + self.contents
-
         new_content = self.__models[index].generate_content(
-            contents, index+1)
+            self.contents, index+1)
         self.__contents.append(
             (index+1, new_content))
 
