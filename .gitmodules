@@ -1,0 +1,3 @@
+[submodule "EVM"]
+	path = EVM
+	url = git@github.com:zaqari/EVM.git

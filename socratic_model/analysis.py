@@ -2,24 +2,18 @@ import os
 import typing
 import torch
 import xlsxwriter
+from tqdm.autonotebook import tqdm
 
-from . import db, seminar
-
-import EVM
+from . import db, seminar, custom_ceda
 import Levenshtein
-
-from tqdm.notebook import tqdm
-
-_wv = EVM.languageModelLayers('roberta-base', layers=[7])
 
 
 class Utterance:
 
-    def __init__(self, raw: str, wv: EVM.languageModelLayers = _wv):
+    def __init__(self, raw: str):
         tag, content = raw.split('\t')
         self.tag = tag[:-1]
         self.content = content
-        self.token_count = len(_wv._tokenize(raw)[0])
 
     def __repr__(self):
         return "{}: {}".format(self.tag, self.content)
@@ -33,6 +27,8 @@ class CHA:
 
         self.utterances = [Utterance(raw_line) for raw_line in self.raw[self.raw.find(
             '*'):-5].split('\n')]  # trim \n@End
+        self.content = [u.content for u in self.utterances]
+        self.tag = [u.tag for u in self.utterances]
 
 
 class Analysis:
@@ -44,10 +40,8 @@ class Analysis:
         self.root = folder
         self.chas: typing.Dict[str, CHA] = {}
         for f_name in os.listdir(self.root):
-            #try:
-            self.chas[f_name] = CHA(os.path.join(self.root, f_name))
-            #except ValueError:
-            #    print(f_name)
+            if f_name[-3:] == 'cha':
+                self.chas[f_name] = CHA(os.path.join(self.root, f_name))
         self.workbook = xlsxwriter.Workbook('{}_analysis.xlsx'.format(folder))
 
     @staticmethod
@@ -57,27 +51,20 @@ class Analysis:
             with open('{}/{}.cha'.format(folder, db_obj.id), 'w') as f:
                 f.write(sem_obj.to_cha())
 
-    def evm(self, k: int, wv=_wv, sigma=0.3, dim=None, write_xlsx=True):
-        mod = EVM.EVM(wv_model=wv, sigma=sigma, entropy_dim=dim)
+    def evm(self, write_xlsx=True):
+        mod = custom_ceda.CustomCEDA()
         self.entries = []
         with torch.no_grad():
             for f_name, cha in tqdm(self.chas.items(), desc="EVM"):
-                for i in tqdm(range(len(cha.utterances))):
-                    for j in range(1, k+1):
-                        if (i+j) < len(cha.utterances):
-                            u_i = cha.utterances[i]
-                            u_j = cha.utterances[i+j]
-                            self.entries.append((f_name,
-                                                i,
-                                                i+j,
-                                                u_i.tag,
-                                                u_j.tag,
-                                                u_i.token_count,
-                                                u_j.token_count,
-                                                *mod(u_i.content, u_j.content)))
-        if write_xlsx:
-            self.__write_xlsx('standard_evm', ('fl', 'i', 'j', 'who_i',
-                              'who_j', 'n_i', 'n_j', 'h_1', 'h_2'), self.entries)
+                mod.fit(cha.content)
+                who_i = [tag for tag in cha.tag for _ in range(len(cha.tag))]
+                who_j = cha.tag * len(cha.tag)
+                mod.meta_data = [{'fl': f_name, 'who_i': i, 'who_j': j}
+                                 for i, j in zip(who_i, who_j)]
+                self.entries.append(mod.graph_df)
+        # if write_xlsx:
+        #    self.__write_xlsx('standard_evm', ('fl', 'i', 'j', 'who_i',
+        #                      'who_j', 'n_i', 'n_j', 'h_1', 'h_2'), self.entries)
         return self.entries
 
     def levenshtein(self, k: int, weights: typing.Tuple[int, int, int] = (1, 1, 1), write_xlsx=True):

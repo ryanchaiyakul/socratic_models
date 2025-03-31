@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Decide if English cuisine is tasty.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Whether English cuisine is tasty is entirely subjective.
@@ -19,7 +19,7 @@
 *SPE0:	For example, a perfectly cooked Sunday roast with crispy roast potatoes, flavorful gravy, and tender meat (beef, lamb, or pork) is a classic for a reason.
 *SPE0:	Similarly, a good fish and chips, with fresh, flaky fish and crispy batter, is a treat.
 *SPE0:	Properly made Cornish pasties are also delicious, a savory pastry filled with meat and vegetables.
-*SPE0:	And let's not forget a good ploughman's lunch – simple, but satisfying.
+*SPE0:	And let's not forget a good ploughman's lunch â€“ simple, but satisfying.
 *SPE0:	On the other hand, some traditional English dishes haven't aged well, or rely too heavily on bland or processed ingredients.
 *SPE0:	Things like overcooked vegetables, bland boiled potatoes, or certain mass-produced sausages can be quite unappetizing.
 *SPE0:	It also depends heavily on preparation.
@@ -48,7 +48,7 @@
 *SPE0:	I'm glad I could help.
 *SPE0:	Enjoy your culinary explorations in England!
 *SPE0:	I hope you discover many delicious dishes beyond the stereotypes.
-*SPE0:	Bon appétit!
+*SPE0:	Bon appÃ©tit!
 *SPE1:	Thank you!
 *SPE1:	I will.
 *SPE1:	And thank you again for the comprehensive and helpful response.

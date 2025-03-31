@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Explain why basketball is a sport.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Basketball is a sport because it involves physical exertion, competition, skill, and established rules within a structured framework.
@@ -23,7 +23,7 @@
 *SPE0:	Ultimately, whether or not you consider chess a sport depends on your personal definition.
 *SPE1:	So you're saying the key differentiator is the physical exertion?
 *SPE1:	What about things like e-sports?
-*SPE1:	They involve intense competition, skill, strategy, and established rules, but it’s all done sitting down.
+*SPE1:	They involve intense competition, skill, strategy, and established rules, but itâ€™s all done sitting down.
 *SPE1:	Are they sports?
 *SPE1:	And if so, where does that leave your physical exertion argument?
 *SPE0:	You've hit on another crucial point that challenges traditional definitions of sport.
@@ -49,7 +49,7 @@
 *SPE0:	So, it's a dynamic interplay between cultural trends and the actions of powerful institutions like the IOC.
 *SPE1:	That's a really insightful explanation.
 *SPE1:	So, in a way, the IOC isn't just defining what a sport *is*, but also what a sport *should be*, reflecting certain values and priorities.
-*SPE1:	It's almost a self-fulfilling prophecy – they choose what sports are included, which then shapes public perception of what constitutes a sport, reinforcing their own choices.
+*SPE1:	It's almost a self-fulfilling prophecy â€“ they choose what sports are included, which then shapes public perception of what constitutes a sport, reinforcing their own choices.
 *SPE1:	Fascinating.
 *SPE0:	Precisely!
 *SPE0:	The IOC's role extends beyond simple classification; it's about setting a standard, promoting specific values, and influencing the global landscape of competitive activities.

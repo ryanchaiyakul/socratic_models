@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Debate if chess is a sport.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Okay, I'm ready to debate whether chess is a sport.
@@ -58,7 +58,7 @@
 *SPE0:	You've presented a strong counter-argument, effectively addressing my concerns.
 *SPE0:	The inclusion of esports as a growing category of competitive activities undeniably challenges the traditional, purely physical definition of sport.
 *SPE0:	Your analogy to shooting sports, motorsports, and sailing highlights the fact that physical contact isn't a necessary component of all sports.
-*SPE0:	The dedication and rigorous training required for chess mastery are also points well taken – the level of commitment is certainly comparable to that seen in many traditional sports.
+*SPE0:	The dedication and rigorous training required for chess mastery are also points well taken â€“ the level of commitment is certainly comparable to that seen in many traditional sports.
 *SPE0:	However, a crucial distinction remains:  the *type* of skill involved.
 *SPE0:	Esports, while mentally demanding, often involve some degree of hand-eye coordination and reaction time, which are skills with at least a partial physical component.
 *SPE0:	Chess, on the other hand, is purely cognitive.

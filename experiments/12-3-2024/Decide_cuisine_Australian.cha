@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Decide if Australian cuisine is tasty.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Whether Australian cuisine is tasty is subjective and depends on individual preferences.
@@ -28,7 +28,7 @@
 *SPE1:	That's a really helpful overview.
 *SPE1:	The inclusion of native ingredients like lemon myrtle and bush tomato is particularly interesting, and it sounds like they add some truly unique flavour dimensions.
 *SPE1:	The contrast with the more familiar dishes like lamb and steak highlights the eclectic nature of the cuisine.
-*SPE1:	I'm intrigued by the Pavlova – the debate over its origins adds another layer to its appeal!
+*SPE1:	I'm intrigued by the Pavlova â€“ the debate over its origins adds another layer to its appeal!
 *SPE1:	Thanks for the detailed explanation.
 *SPE0:	You're very welcome!
 *SPE0:	I'm glad I could give you a better understanding of the complexity and diversity within Australian cuisine.

@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Decide if psychology is a science.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Psychology employs the scientific method, but whether it's *fully* a science is a matter of ongoing debate.
@@ -26,7 +26,7 @@
 *SPE0:	The ongoing development of methodologies to address this challenge is, in itself, a hallmark of a scientific discipline.
 *SPE1:	That's a well-reasoned perspective.
 *SPE1:	The development of new methodologies to address inherent limitations is indeed a strong argument in favor of psychology's scientific status.
-*SPE1:	The iterative process of refinement, the constant questioning of assumptions, and the search for better ways to measure and understand complex phenomena – these are all hallmarks of scientific progress.
+*SPE1:	The iterative process of refinement, the constant questioning of assumptions, and the search for better ways to measure and understand complex phenomena â€“ these are all hallmarks of scientific progress.
 *SPE1:	However,  a lingering concern might be the reproducibility crisis that affects various fields, including psychology.
 *SPE1:	How significant is this issue, and how does it impact the perception of psychology as a science?
 *SPE1:	Does the difficulty in replicating some psychological studies weaken the claim that it is a fully fledged science?

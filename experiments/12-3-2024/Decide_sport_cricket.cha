@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Decide if cricket is a sport.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Yes, cricket is a sport.
@@ -35,7 +35,7 @@
 *SPE0:	Test matches are indeed slower paced than Twenty20 (T20) matches, for example.
 *SPE0:	Even within Test matches, there can be periods of intense action and bursts of speed.
 *SPE0:	Furthermore, the slower pace of cricket often allows for a different kind of strategic depth and tactical nuance absent in faster-paced sports.
-*SPE0:	The sustained periods of play necessitate careful planning, endurance, and mental fortitude – qualities crucial for success.
+*SPE0:	The sustained periods of play necessitate careful planning, endurance, and mental fortitude â€“ qualities crucial for success.
 *SPE0:	The subtle shifts in momentum, the prolonged periods of pressure, and the complex interplay between batting, bowling, and fielding require considerable mental and physical agility.
 *SPE0:	Essentially, while the overall pace might differ, the underlying elements of physical skill, competition, and strategic decision-making remain central to cricket, regardless of its format.
 *SPE0:	Judging a sport solely based on its pace ignores the complexities and strategic depth that can characterize slower-paced activities.

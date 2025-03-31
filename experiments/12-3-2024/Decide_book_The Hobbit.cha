@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Decide if The Hobbit is a good book.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Whether *The Hobbit* is a "good" book is subjective, but it's undeniably a significant and influential work of fantasy literature.
@@ -28,16 +28,16 @@
 *SPE1:	Many people might not have ever picked up *The Lord of the Rings* if they hadn't enjoyed *The Hobbit* first.
 *SPE1:	It's like a stepping stone to a much larger and more complex world.
 *SPE1:	And that simpler style, while less nuanced, makes it easier to follow and keeps the adventure at the forefront.
-*SPE1:	It’s a great adventure story, plain and simple.
+*SPE1:	Itâ€™s a great adventure story, plain and simple.
 *SPE0:	You've hit the nail on the head.
 *SPE0:	That "stepping stone" analogy perfectly captures *The Hobbit's* role in the wider Tolkienian canon.
 *SPE0:	The simpler style, far from being a weakness, allows the adventure to truly shine, keeping the reader engaged without being bogged down in intricate detail.
 *SPE0:	It prioritizes the journey and the excitement of the quest, which is arguably what makes it so appealing, especially to younger readers or those new to the genre.
-*SPE0:	It’s a testament to Tolkien's skill that he could craft such an engaging story with a relatively straightforward narrative.
+*SPE0:	Itâ€™s a testament to Tolkien's skill that he could craft such an engaging story with a relatively straightforward narrative.
 *SPE1:	Exactly!
 *SPE1:	He understood the power of a good story, even a simpler one.
 *SPE1:	And the world he created, even in its less detailed form in *The Hobbit*, is still incredibly evocative.
-*SPE1:	I think that’s a key to its lasting appeal – the sense of wonder and adventure it inspires.
+*SPE1:	I think thatâ€™s a key to its lasting appeal â€“ the sense of wonder and adventure it inspires.
 *SPE1:	It's a book that stays with you.
 *SPE0:	I completely agree.
 *SPE0:	The evocative nature of Middle-earth, even in its less fleshed-out form in *The Hobbit*, is a testament to Tolkien's imaginative power.

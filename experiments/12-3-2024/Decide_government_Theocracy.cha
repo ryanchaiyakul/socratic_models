@@ -5,14 +5,14 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Decide if Theocracy is a good form of government.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Whether theocracy is a good form of government is a complex question with no easy answer.
 *SPE0:	It depends heavily on the specific tenets of the religion involved, how strictly those tenets are interpreted and enforced, and the safeguards in place to prevent abuses of power.
 *SPE1:	I can see that.
 *SPE1:	A theocracy based on a religion that emphasizes peace, compassion, and social justice might seem appealing to many.
-*SPE1:	But what about a religion with more…militant interpretations?
+*SPE1:	But what about a religion with moreâ€¦militant interpretations?
 *SPE1:	How do you prevent theocratic rule from becoming tyrannical?
 *SPE1:	The potential for corruption and oppression seems incredibly high.
 *SPE0:	Precisely.

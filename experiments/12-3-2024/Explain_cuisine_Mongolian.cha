@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Explain why Mongolian cuisine is tasty.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Mongolian cuisine's deliciousness stems from a beautiful interplay of fresh, high-quality ingredients and simple, yet impactful cooking techniques.
@@ -16,19 +16,19 @@
 *SPE1:	That's a really good explanation!
 *SPE1:	I've always been curious about Mongolian food, but haven't had the chance to try much of it.
 *SPE1:	You make it sound incredibly appealing, especially the emphasis on fresh ingredients and simple techniques.
-*SPE1:	I'm particularly intrigued by the airag and khuir – they sound like they add some really interesting complexity.
+*SPE1:	I'm particularly intrigued by the airag and khuir â€“ they sound like they add some really interesting complexity.
 *SPE1:	Do you have a favorite Mongolian dish?
 *SPE1:	And if so, what makes it stand out for you?
 *SPE0:	I'm glad I could pique your interest!
 *SPE0:	It's truly a cuisine that rewards exploration.
 *SPE0:	My favorite dish is probably Buuz.
-*SPE0:	While it might seem simple – essentially steamed meat-filled dumplings – the quality of the meat and the delicate balance of spices within the filling is what elevates it.
+*SPE0:	While it might seem simple â€“ essentially steamed meat-filled dumplings â€“ the quality of the meat and the delicate balance of spices within the filling is what elevates it.
 *SPE0:	The dough itself is wonderfully soft and yielding, providing a perfect counterpoint to the juicy, savory interior.
 *SPE0:	It's a dish that embodies the essence of Mongolian cuisine: simple, yet profoundly satisfying.
 *SPE0:	What about you?
 *SPE0:	Have you ever tried any Mongolian food, even just something small?
 *SPE1:	No, I haven't, unfortunately.
-*SPE1:	Your description of Buuz sounds amazing though – that delicate balance of flavors and textures is exactly what I find appealing about food in general.
+*SPE1:	Your description of Buuz sounds amazing though â€“ that delicate balance of flavors and textures is exactly what I find appealing about food in general.
 *SPE1:	The soft dough and juicy filling sounds perfect.
 *SPE1:	It makes me want to find a Mongolian restaurant!
 *SPE1:	Do you have any recommendations on what to look for on a menu if I'm a total beginner, besides Buuz of course?
@@ -41,12 +41,12 @@
 *SPE0:	It's a more adventurous choice, but incredibly rewarding if you enjoy hearty, flavorful meats.
 *SPE0:	Another good option, particularly if you like dairy, is Suutei Tsai, a salty tea with milk and sometimes salt.
 *SPE0:	It's a refreshing and surprisingly delicious drink, a great way to experience a staple of the Mongolian diet.
-*SPE0:	Finally, if you're feeling adventurous you could try Khuushuur – these are deep-fried meat pastries similar to a pasty, but with a distinctly Mongolian flavor.
+*SPE0:	Finally, if you're feeling adventurous you could try Khuushuur â€“ these are deep-fried meat pastries similar to a pasty, but with a distinctly Mongolian flavor.
 *SPE0:	Don't be afraid to ask your server for recommendations, too!
 *SPE0:	They'll often be happy to guide you.
 *SPE1:	Wow, Khorkhog sounds incredibly interesting!
 *SPE1:	The idea of meat cooked with hot stones is fascinating.
-*SPE1:	Suutei Tsai also piques my interest – a salty tea with milk sounds unusual, but in a good way!
+*SPE1:	Suutei Tsai also piques my interest â€“ a salty tea with milk sounds unusual, but in a good way!
 *SPE1:	I think I'll definitely try to find a restaurant that serves those dishes, along with the Buuz, of course.
 *SPE1:	Thanks for all the recommendations; you've given me a great starting point for my Mongolian food adventure!
 *SPE1:	I really appreciate you taking the time to explain everything so thoroughly.
@@ -54,7 +54,7 @@
 *SPE0:	I'm thrilled to have helped you discover the delights of Mongolian cuisine.
 *SPE0:	I truly believe it's a hidden gem, and I hope you enjoy your culinary adventure.
 *SPE0:	Let me know if you have any other questions, or if you want more recommendations later!
-*SPE0:	And most importantly, bon appétit!
+*SPE0:	And most importantly, bon appÃ©tit!
 *SPE0:	I'd love to hear about your experience once you've tried some of these dishes.
 *SPE1:	I definitely will!
 *SPE1:	I'm already looking forward to it and will be sure to tell you all about it afterwards.

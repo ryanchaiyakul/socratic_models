@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Explain why chess is a sport.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Chess is a sport because it requires intense mental exertion, strategic planning, and the development of skills through practice and training, all of which result in measurable performance and competition against others.
@@ -18,7 +18,7 @@
 *SPE0:	While the physical demands are minimal compared to endurance sports like marathons,  the mental strain and focus required over extended periods can be incredibly taxing.
 *SPE0:	Grandmasters often report exhaustion after intense tournaments.
 *SPE0:	Should we exclude sports that demand primarily mental agility?
-*SPE0:	Consider things like esports—they involve intense mental focus and strategic thinking, yet many consider them sports.
+*SPE0:	Consider things like esportsâ€”they involve intense mental focus and strategic thinking, yet many consider them sports.
 *SPE0:	The definition of "sport" itself is evolving, and it seems increasingly restrictive to insist on a purely physical component.
 *SPE1:	I see your point about mental exhaustion and the evolving definition of "sport.
 *SPE1:	"  Esports are a good example, and the comparison is helpful.

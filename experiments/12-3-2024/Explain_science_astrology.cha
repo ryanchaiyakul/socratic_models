@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Explain why astrology is a science.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Astrology is not a science.
@@ -31,7 +31,7 @@
 *SPE0:	The claims made by astrology haven't been supported by any robust scientific studies, and in fact, numerous studies have attempted to find such evidence and have failed to do so.
 *SPE0:	While it's *possible* future discoveries could somehow validate some aspects of astrology, this possibility doesn't make it scientifically valid *now*.
 *SPE0:	Suggesting that astrology is "ahead of its time" essentially shifts the burden of proof to the future, without offering any present-day evidence to support its claims.
-*SPE0:	It’s crucial to differentiate between plausible speculation and scientifically supported knowledge.
+*SPE0:	Itâ€™s crucial to differentiate between plausible speculation and scientifically supported knowledge.
 *SPE1:	You make a strong case.
 *SPE1:	I guess my main point was that dismissing something entirely based on current understanding seems a bit short-sighted.
 *SPE1:	Perhaps a more open-minded approach, one that acknowledges the limitations of our current scientific understanding, might be more productive.

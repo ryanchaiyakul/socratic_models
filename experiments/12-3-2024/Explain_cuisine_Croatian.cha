@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Explain why Croatian cuisine is tasty.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Croatian cuisine's deliciousness stems from a confluence of factors.
@@ -21,7 +21,7 @@
 *SPE1:	Do you have any specific examples of dishes that highlight these qualities?
 *SPE0:	Absolutely!
 *SPE0:	Glad I could pique your interest.
-*SPE0:	A few dishes that really showcase the best of Croatian cuisine and its emphasis on fresh ingredients and traditional methods include:  * **Paöticada:** This slow-cooked beef stew, typically from Dalmatia, is a masterpiece of patience and flavor.
+*SPE0:	A few dishes that really showcase the best of Croatian cuisine and its emphasis on fresh ingredients and traditional methods include:  * **Pa≈°ticada:** This slow-cooked beef stew, typically from Dalmatia, is a masterpiece of patience and flavor.
 *SPE0:	The beef is marinated for hours, sometimes even days, in a mixture of wine, vinegar, and spices before being braised until incredibly tender.
 *SPE0:	It's often served with gnocchi or homemade pasta.
 *SPE0:	The long cooking time allows the flavors to meld beautifully.
@@ -35,8 +35,8 @@
 *SPE0:	These are just a few examples, and regional variations abound, but they all share a common thread: a respect for quality ingredients and traditional cooking techniques that result in incredibly tasty food.
 *SPE0:	Have you ever tried any Croatian dishes?
 *SPE1:	Wow, those all sound amazing!
-*SPE1:	Paöticada, with its long marinating time, sounds incredibly flavorful and tender.
-*SPE1:	Brudet appeals to my love of fresh seafood stews, and pekaÖthe idea of food cooked slowly over an open fire just sounds incredibly romantic and delicious.
+*SPE1:	Pa≈°ticada, with its long marinating time, sounds incredibly flavorful and tender.
+*SPE1:	Brudet appeals to my love of fresh seafood stews, and peka‚Ä¶the idea of food cooked slowly over an open fire just sounds incredibly romantic and delicious.
 *SPE1:	I haven't tried any Croatian dishes before, unfortunately, but now I'm determined to!
 *SPE1:	Your descriptions have really made me hungry.
 *SPE1:	Do you have any recommendations on where I might find authentic Croatian food, perhaps even a specific region or type of restaurant to look for?
@@ -44,7 +44,7 @@
 *SPE0:	To find authentic Croatian food, your best bet is to look for restaurants that emphasize "traditional" Croatian cuisine or those specializing in a specific region.
 *SPE0:	If you're in a larger city with a sizeable Croatian diaspora, you might find dedicated Croatian restaurants.
 *SPE0:	Look for places with Croatian names, menus written in Croatian (or at least with Croatian translations alongside English), and dishes that go beyond the basic "tourist" fare.
-*SPE0:	A good sign is if they offer some of the dishes I mentioned earlier - Paöticada, Brudet, or dishes cooked *peka* style.
+*SPE0:	A good sign is if they offer some of the dishes I mentioned earlier - Pa≈°ticada, Brudet, or dishes cooked *peka* style.
 *SPE0:	For a truly authentic experience, consider focusing on a specific region.
 *SPE0:	For example:  * **Dalmatian cuisine (Split, Dubrovnik):** This coastal region emphasizes fresh seafood, olive oil, and herbs.
 *SPE0:	Expect dishes like brudet, grilled fish, and seafood risotto.
@@ -52,17 +52,17 @@
 *SPE0:	Expect dishes featuring truffles, wild mushrooms, pasta, and roasted meats.
 *SPE0:	*Peka* is particularly common here.
 *SPE0:	* **Zagorje cuisine (Zagorje region):** This inland region is known for its hearty stews, roasted meats (especially pork), and dumplings.
-*SPE0:	Paöticada is a common dish here as well.
+*SPE0:	Pa≈°ticada is a common dish here as well.
 *SPE0:	Don't be afraid to ask questions!
 *SPE0:	Restaurant staff can often provide insights into the origins and preparation of their dishes.
 *SPE0:	Finally, if you have any Croatian friends or acquaintances, they'd likely be more than happy to share their favorite spots.
-*SPE0:	Bon appÈtit!
+*SPE0:	Bon app√©tit!
 *SPE0:	(Or, better yet, *Dobar tek*!
 *SPE1:	This is fantastic advice!
-*SPE1:	I really appreciate the regional breakdown ñ it gives me a much clearer idea of what to look for and where to find it.
+*SPE1:	I really appreciate the regional breakdown ‚Äì it gives me a much clearer idea of what to look for and where to find it.
 *SPE1:	The tip about asking questions is great, too; I often find that's the best way to discover hidden gems and learn more about the food I'm eating.
 *SPE1:	I'll definitely keep an eye out for those dishes you mentioned, and I'll try to find a restaurant that specializes in one of those regions.
-*SPE1:	Thank you so much for your detailed and helpful response ñ I'm officially on a mission to try some authentic Croatian food!
+*SPE1:	Thank you so much for your detailed and helpful response ‚Äì I'm officially on a mission to try some authentic Croatian food!
 *SPE0:	You're very welcome!
 *SPE0:	I'm so glad I could help.
 *SPE0:	I truly believe Croatian cuisine is a hidden gem, and I hope you have a wonderful experience discovering it.

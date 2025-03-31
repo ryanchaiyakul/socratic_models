@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Decide if Croatian cuisine is tasty.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Croatian cuisine is, in my opinion, very tasty.
@@ -14,14 +14,14 @@
 *SPE1:	The fresh seafood, the hearty stews, the amazing pastries.
 *SPE1:	it's all so good.
 *SPE1:	What are some of your favorite Croatian dishes?
-*SPE0:	I'm particularly fond of  Paöticada, a slow-cooked beef stew, and black risotto (crni riûot).
+*SPE0:	I'm particularly fond of  Pa≈°ticada, a slow-cooked beef stew, and black risotto (crni ri≈æot).
 *SPE0:	The seafood dishes are also fantastic; I've had some memorable grilled fish experiences.
 *SPE0:	What about you?
 *SPE0:	Any stand-out dishes you've tried?
-*SPE1:	Oh, Paöticada is definitely on my list to try!
+*SPE1:	Oh, Pa≈°ticada is definitely on my list to try!
 *SPE1:	I've heard amazing things about it.
 *SPE1:	I've had the pleasure of enjoying  Brudet (fish stew) a few times, and it's always been incredibly flavorful and comforting.
-*SPE1:	I also really enjoyed some grilled sardines on the coast once ñ incredibly fresh and simply prepared.
+*SPE1:	I also really enjoyed some grilled sardines on the coast once ‚Äì incredibly fresh and simply prepared.
 *SPE1:	What region of Croatia have you sampled the most cuisine from?
 *SPE1:	I'm curious if that influences your preferences.
 *SPE0:	That's excellent!
@@ -33,20 +33,20 @@
 *SPE1:	The Dalmatian Coast makes perfect sense, given the seafood focus.
 *SPE1:	I have encountered some inland dishes, though my experience is less extensive.
 *SPE1:	I've read about dishes featuring wild mushrooms and truffles from Istria, and they sound incredible.
-*SPE1:	I've also seen recipes for various hearty stews and roasted meats from the continental regions ñ very different from the coastal fare.
+*SPE1:	I've also seen recipes for various hearty stews and roasted meats from the continental regions ‚Äì very different from the coastal fare.
 *SPE1:	Perhaps we could explore some Istrian recipes together sometime?
 *SPE1:	I'm particularly interested in learning more about their use of truffles.
 *SPE0:	I'd love that!
 *SPE0:	Exploring Istrian cuisine, especially the truffle dishes, sounds fascinating.
-*SPE0:	Perhaps we could start by looking at some recipes for Fuûi with truffles ñ a classic pasta dish.
-*SPE0:	Do you have any particular Istrian recipes in mind that you'd like to investigate first, or should we start with the Fuûi?
-*SPE1:	Fuûi with truffles sounds like an excellent starting point!
+*SPE0:	Perhaps we could start by looking at some recipes for Fu≈æi with truffles ‚Äì a classic pasta dish.
+*SPE0:	Do you have any particular Istrian recipes in mind that you'd like to investigate first, or should we start with the Fu≈æi?
+*SPE1:	Fu≈æi with truffles sounds like an excellent starting point!
 *SPE1:	It's a classic for a reason, and I think it would be a great way to get a feel for Istrian flavors.
 *SPE1:	Let's start there.
 *SPE1:	I'll look for some authentic recipes, and we can compare notes.
 *SPE1:	I'm particularly interested in seeing what types of truffles are traditionally used and how the sauce is prepared.
 *SPE0:	Excellent choice!
-*SPE0:	I've already located several recipes for Fuûi with truffles, ranging from simple to quite elaborate.
+*SPE0:	I've already located several recipes for Fu≈æi with truffles, ranging from simple to quite elaborate.
 *SPE0:	I'm particularly interested in comparing the variations in the truffle sauce - some recipes call for a simple butter and truffle oil base, while others incorporate cream or even wine.
 *SPE0:	I'll compile some key differences and we can discuss them.
 *SPE0:	Let me know what recipes you find, and we can compare notes!

@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Debate if political science is a science.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Okay, let's debate whether political science is a science.
@@ -19,7 +19,7 @@
 *SPE1:	This doesn't negate the scientific process.
 *SPE1:	Rather, it necessitates the development of sophisticated statistical techniques and comparative methodologies to analyze data and draw inferences.
 *SPE1:	We can't clone societies to run controlled experiments, but we *can* analyze vast datasets across numerous political systems to identify correlations and causations, even if those causations are probabilistic rather than deterministic.
-*SPE1:	Secondly, while perfect control of variables is ideal, it’s practically impossible in any social science, including economics or sociology.
+*SPE1:	Secondly, while perfect control of variables is ideal, itâ€™s practically impossible in any social science, including economics or sociology.
 *SPE1:	Political scientists employ various strategies to mitigate the impact of uncontrolled variables, such as statistical controls, comparative case studies, and process tracing.
 *SPE1:	These methods, while not yielding perfect control, allow for robust inferences to be drawn.
 *SPE1:	Finally, the subjectivity inherent in political phenomena doesn't preclude scientific analysis.

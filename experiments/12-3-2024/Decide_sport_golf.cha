@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Decide if golf is a sport.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Whether golf is a sport is a matter of ongoing debate, with valid arguments on both sides.
@@ -16,12 +16,12 @@
 *SPE1:	Doesn't that diminish the purely athletic element?
 *SPE0:	That's a fair point.
 *SPE0:	The physical exertion in golf is certainly different from the sustained high-intensity effort in sports like basketball or swimming.
-*SPE0:	Golf demands a different kind of athleticism – more endurance and precision than explosive power.
+*SPE0:	Golf demands a different kind of athleticism â€“ more endurance and precision than explosive power.
 *SPE0:	While it's true that specialized equipment plays a significant role,  many sports rely on specialized equipment (think racing bikes in cycling or skis in skiing).
 *SPE0:	The skill involved in using that equipment effectively, and the physical demands of wielding it consistently over 18 holes, are still considerable.
 *SPE0:	So, the equipment doesn't negate the athletic aspect entirely, in my opinion, but it does change the nature of the athleticism involved.
 *SPE1:	I see your counterpoint.
-*SPE1:	The endurance aspect is undeniable – walking 18 holes, maintaining focus, and the physical act of swinging a club repeatedly all take a toll.
+*SPE1:	The endurance aspect is undeniable â€“ walking 18 holes, maintaining focus, and the physical act of swinging a club repeatedly all take a toll.
 *SPE1:	But is that enough to qualify it as a "sport" in the same way we think of more traditionally physically demanding activities?
 *SPE1:	Perhaps "sport" is too broad a term, and golf better fits into a category of athletic competition, or something similar.
 *SPE1:	What do you think?

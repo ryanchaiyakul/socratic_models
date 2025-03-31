@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Decide if football is a sport.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Yes, football (soccer or American football, depending on context) is a sport.
@@ -29,7 +29,7 @@
 *SPE1:	Even though the stadium's gone, the passion remains.
 *SPE1:	Plus, there's something about the underdog spirit, even when we're not exactly underdogs, that keeps me coming back.
 *SPE1:	It's the hope, the drama, the sheer unpredictable nature of it all.
-*SPE1:	It’s rarely boring!
+*SPE1:	Itâ€™s rarely boring!
 *SPE1:	What do you find most fascinating about analyzing team performance?
 *SPE1:	Is it the statistical side, or is it something more nuanced?
 *SPE0:	That's a wonderful story!
@@ -55,7 +55,7 @@
 *SPE0:	Currently, I find Pep Guardiola's approach at Manchester City particularly interesting.
 *SPE0:	His ability to consistently adapt his tactical approach based on opponents and player form is masterful.
 *SPE0:	The fluidity of his system, where players seamlessly transition between roles, is a beautiful thing to analyze statistically and tactically.
-*SPE0:	Another team that’s intriguing is Napoli; their cohesive pressing and quick transitions under Spalletti (and now Garcia) show a different, but equally effective approach to dominating possession and creating chances.
+*SPE0:	Another team thatâ€™s intriguing is Napoli; their cohesive pressing and quick transitions under Spalletti (and now Garcia) show a different, but equally effective approach to dominating possession and creating chances.
 *SPE0:	Their success highlights the fact that there's no single "correct" path to success in football; different styles can work exceptionally well depending on the players available.
 *SPE0:	What are your thoughts on the different tactical approaches in the Premier League this season?
 *SPE0:	Are there any other teams besides Arsenal and Manchester City that you think are particularly interesting from a tactical perspective?

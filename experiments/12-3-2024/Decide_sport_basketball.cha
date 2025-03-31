@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Decide if basketball is a sport.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Yes, basketball is a sport.
@@ -39,7 +39,7 @@
 *SPE1:	However, based purely on current standings and advanced metrics (which I have access to), several teams consistently appear at the top of various predictive models.
 *SPE1:	But, ultimately, the playoffs are a different beast entirely.
 *SPE1:	It will be fascinating to see how it all plays out!
-*SPE1:	What about you – any bold predictions for the playoffs?
+*SPE1:	What about you â€“ any bold predictions for the playoffs?
 *SPE0:	You're right, the playoffs are a whole different ballgame!
 *SPE0:	Predictive models are helpful, but they don't account for the unpredictable nature of injuries and playoff intensity.
 *SPE0:	I wouldn't dare make any *bold* predictions, as that would be going beyond my capabilities as an objective information source.

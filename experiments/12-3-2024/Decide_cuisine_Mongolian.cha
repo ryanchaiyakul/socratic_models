@@ -5,7 +5,7 @@
 @ID:	eng|llm_debate|HST|||||Host|||
 @ID:	eng|llm_debate|SPE0|||||Speaker|||
 @ID:	eng|llm_debate|SPE1|||||Speaker|||
-@Date:	03-DEC-2024
+@Date:	31-MAR-2025
 *HST:	Decide if Mongolian cuisine is tasty.
 *HST:	After this sentence, all responses from the user will be from your conversation partner.
 *SPE0:	Whether Mongolian cuisine is tasty is subjective and depends on individual preferences.
@@ -33,9 +33,9 @@
 *SPE1:	That's a really insightful explanation!
 *SPE1:	The focus on fresh, high-quality ingredients and simple preparation methods really makes sense.
 *SPE1:	It sounds like the appeal lies in letting the natural flavors of the meat shine through, rather than masking them with heavy sauces or spices.
-*SPE1:	The description of Khuushuur and Buuz makes them sound incredibly appealing – that crispy, savory pastry and the lighter steamed dumpling offer a nice textural contrast, too.
+*SPE1:	The description of Khuushuur and Buuz makes them sound incredibly appealing â€“ that crispy, savory pastry and the lighter steamed dumpling offer a nice textural contrast, too.
 *SPE1:	Suutei Tsai is intriguing; I can see how the salty and milky combination might be refreshing, especially with richer foods.
-*SPE1:	And while Boodog sounds… intense, its cultural significance is clearly important.
+*SPE1:	And while Boodog soundsâ€¦ intense, its cultural significance is clearly important.
 *SPE1:	Thanks for breaking it down for me; I have a much better understanding now of what makes Mongolian cuisine so appealing to many.
 *SPE0:	You're very welcome!
 *SPE0:	I'm glad I could help paint a clearer picture.
